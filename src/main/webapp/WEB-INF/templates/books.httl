@@ -1,0 +1,33 @@
+<!--#var(List<Book> books)-->
+<html>
+<body>
+	<p>HTTL SpringMVC Demo</p>
+	<p>${header.userAgent}</p>
+	<!--#if(books)-->
+	<table>
+		<tr>
+			<td>序号</td>
+			<td>标题</td>
+			<td>作者</td>
+			<td>出版商</td>
+			<td>出版时间</td>
+			<td>定价</td>
+			<td>折扣</td>
+			<td>售价</td>
+		</tr>
+		<!--#foreach(Book book in books)-->
+		<tr>
+			<td>${foreach.count}</td>
+			<td>${book.title}</td>
+			<td>${book.author}</td>
+			<td>${book.publisher}</td>
+			<td>${book.publication.format("yyyy-MM-dd")}</td>
+			<td>${book.price}</td>
+			<td>${book.discount}%</td>
+			<td>${book.price * book.discount / 100}</td>
+		</tr>
+		<!--#end(foreach)-->
+	</table>
+	<!--#end(if)-->
+</body>
+</html>
