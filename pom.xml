@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>httl</groupId>
 	<artifactId>httl-springmvc</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.9</version>
 	<packaging>war</packaging>
 	<name>HTTL SpringMVC Demo</name>
 	<properties>
@@ -14,7 +14,7 @@
 		<dependency>
 			<groupId>httl</groupId>
 			<artifactId>httl</artifactId>
-			<version>1.0.7</version>
+			<version>1.0.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
