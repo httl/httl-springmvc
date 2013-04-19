@@ -1,4 +1,3 @@
-<!--#var(List<Book> books)-->
 <html>
 <body>
 	<p>HTTL SpringMVC Demo</p>
@@ -7,7 +6,7 @@
 	<table>
 		<tr>
 			<td>序号</td>
-			<td>标题</td>
+			<td>${"book.title".message}</td>
 			<td>作者</td>
 			<td>出版商</td>
 			<td>出版时间</td>
@@ -26,8 +25,8 @@
 			<td>${book.discount}%</td>
 			<td>${book.price * book.discount / 100}</td>
 		</tr>
-		<!--#end(foreach)-->
+		<!--#end-->
 	</table>
-	<!--#end(if)-->
+	<!--#end-->
 </body>
 </html>
